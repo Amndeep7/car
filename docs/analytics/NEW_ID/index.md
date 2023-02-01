@@ -1,11 +1,11 @@
 ---
-title: "CAR-2013-01-002: DO THIS TEST"
+title: "NEW_ID: New DATA"
 layout: analytic
-submission_date: 2013/01/25
+submission_date: 2022/01/25
 information_domain: Analytic, Host
 subtypes: Registry
 analytic_type: Situational Awareness, TTP
-contributors: MITRE
+contributors: TESTING
 applicable_platforms: Windows
 ---
 <br><br>
