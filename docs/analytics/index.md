@@ -781,7 +781,7 @@ permalink: /analytics/
             </tr>
             <tr>
                 <td style="white-space:nowrap;"><a href="/analytics/NEW_ID_BUT_NEWER_THESECOND/">NEW_ID_BUT_NEWER_THESECOND</a></td>
-                <td>New DATA</td>
+                <td>New DATA 2</td>
                 <td style="white-space:nowrap;">January 25 2022</td>
                 <td><ul><li><a href="https://attack.mitre.org/techniques/T1543/">Create or Modify System Process</a></li><li><a href="https://attack.mitre.org/techniques/T1053/">Scheduled Task/Job</a></li></ul></td>
                 <td></td>
