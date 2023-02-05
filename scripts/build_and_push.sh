@@ -118,6 +118,7 @@ if git diff --quiet "$_git_branch" -- "$_changes_path"; then
   exit 1
 else
   echo "Changes detected..."
+  git status
 fi
 
 echo "Checking if git remote exists and is reachable and if git branch exists on it..."
