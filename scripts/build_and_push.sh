@@ -38,9 +38,9 @@ source ./venv/bin/activate
 echo "Installing dependencies in virtual environment..."
 python -m pip install -r ./requirements.txt
 
-_rm_does_not_exist=1
+_rm_does_not_exist="false"
 if ! [ -x "$(command -v rm)" ] ; then
-  _rm_does_not_exist=0
+  _rm_does_not_exist="true"
   echo "'rm' is not installed or is not executable by current user..."
   echo "Cannot clean up /docs/analytics..."
   echo "There is a potential for unwanted analyses to still show up on the site even after having deleted them from /analytics..."
@@ -146,7 +146,7 @@ git -c user.name="$_git_user_name" -c user.email="$_git_user_email" commit --all
 echo "Pushing changes..."
 git push "$_git_remote" "$_git_branch"
 
-if "$_rm_does_not_exist" ; then
+if [ "$_rm_does_not_exist" = "true" ]; then
   echo "Cannot clean up virtual environment..."
 else
   echo "Cleaning up virtual environment..."
