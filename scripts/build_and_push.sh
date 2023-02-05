@@ -135,6 +135,9 @@ else
   echo "Staging changes in /docs..."
 fi
 git add "$_changes_path"
+if [ "$_commit_entire_repo" = "true" ]; then
+  git restore --staged ./venv # don't ever want to add the virtual environment, esp since it's intentionally temporary
+fi
 
 echo "Committing changes..."
 git -c user.name="$_git_user_name" -c user.email="$_git_user_email" commit --allow-empty-message -m "$_git_commit_message"
