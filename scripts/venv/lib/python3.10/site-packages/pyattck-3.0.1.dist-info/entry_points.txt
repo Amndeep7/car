@@ -1,0 +1,3 @@
+[console_scripts]
+pyattck = pyattck.__main__:main
+
