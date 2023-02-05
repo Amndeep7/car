@@ -145,8 +145,7 @@ git -c user.name="$_git_user_name" -c user.email="$_git_user_email" commit --all
 echo "Pushing changes..."
 git push "$_git_remote" "$_git_branch"
 
-if _rm_does_not_exist ; then
-  echo "'rm' is not installed or is not executable by current user..."
+if "$_rm_does_not_exist" ; then
   echo "Cannot clean up virtual environment..."
 else
   echo "Cleaning up virtual environment..."
