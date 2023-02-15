@@ -68,6 +68,13 @@ python ./generate_sensors.py
 echo "Deactivating virtual environment..."
 deactivate
 
+if [ "$_rm_does_not_exist" = "true" ]; then
+  echo "Cannot clean up virtual environment..."
+else
+  echo "Cleaning up virtual environment..."
+  # rm -r ./venv
+fi
+
 if ! [ -x "$(command -v git)" ]; then
   echo "'git' is not installed or is not executable by current user..."
   echo "Quitting..."
@@ -147,7 +154,7 @@ else
   echo "Staging changes in /docs..."
 fi
 git add "$_changes_path"
-if [ "$_commit_entire_repo" = "true" ]; then
+if [ "$_commit_entire_repo" = "true" ] && git status --porcelain | grep 'scripts/venv/'; then
   git restore --staged ./venv # don't ever want to add the virtual environment, esp since it's intentionally temporary
 fi
 
@@ -156,13 +163,6 @@ git -c user.name="$_git_user_name" -c user.email="$_git_user_email" commit --all
 
 echo "Pushing changes..."
 git push "$_git_remote" "$_git_branch"
-
-if [ "$_rm_does_not_exist" = "true" ]; then
-  echo "Cannot clean up virtual environment..."
-else
-  echo "Cleaning up virtual environment..."
-  rm -r ./venv
-fi
 
 echo "Build and push succeeded..."
 echo "Quitting..."
