@@ -158,6 +158,7 @@ if [ "$_commit_entire_repo" = "true" ] && git status --porcelain | grep 'scripts
   echo "Virtual environment should not be version controlled by git since it is an intentionally ephemeral directory..."
   echo "Running git restore on the virtual environment..."
   git restore --staged ./venv
+  git status
 fi
 
 echo "Committing changes..."
