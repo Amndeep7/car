@@ -197,3 +197,7 @@ Sensors are tools that collect data that can be used to run analytics.
 
 CAR currently has a limited number of sensors mapped to the CAR [Data Model](../data_model). They are:
 {}'''.format('\n'.join(('* [{sensor_name} ({sensor_version})]({sensor_name}_{sensor_version})'.format(sensor_name=sensor['sensor_name'], sensor_version=sensor['sensor_version']) for sensor in mappings)))
+index_file = open('../docs/sensors/index.md', 'w')
+index_file.write(index_content)
+index_file.flush()
+index_file.close()
