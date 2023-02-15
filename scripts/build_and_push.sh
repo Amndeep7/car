@@ -155,7 +155,9 @@ else
 fi
 git add "$_changes_path"
 if [ "$_commit_entire_repo" = "true" ] && git status --porcelain | grep 'scripts/venv/'; then
-  git restore --staged ./venv # don't ever want to add the virtual environment, esp since it's intentionally temporary
+  echo "Virtual environment should not be version controlled by git since it is an intentionally ephemeral directory..."
+  echo "Running git restore on the virtual environment..."
+  git restore --staged ./venv
 fi
 
 echo "Committing changes..."
