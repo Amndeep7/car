@@ -184,8 +184,8 @@ for tid in sorted(table_techniques):
         none_sub_str = "(N/A - technique only)"
     else:
         none_str = "(N/A - see below)"
-    if len(sub_bucket.keys()) > 1 or len(none_bucket) > 0:
-      num_rows = len(sub_bucket.keys()) + len(none_bucket) + 1
+    if len(sub_bucket.keys()) > 1:
+      num_rows = len(sub_bucket.keys())
       tid_url = "https://attack.mitre.org/techniques/{0}/".format(tid)
       tid_link = '<a href="{0}">{1}: {2}</a>'.format(tid_url,tid,techniques[tid])
       rowspan = 'rowspan="{0}"'.format(num_rows)
