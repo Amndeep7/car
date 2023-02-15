@@ -1,5 +1,7 @@
 """This script generates the sensor portion of the site, including coverage,
 for each YAML sensor mapping file.
+NOTE: This script should be run after `generate_analytics.py` as it is
+dependent on files in /docs/analytics being up to date.
 """
 
 import json
@@ -196,12 +198,22 @@ title: "Sensors"
 Sensors are tools that collect data that can be used to run analytics.
 
 CAR currently has a limited number of sensors mapped to the CAR [Data Model](../data_model). They are:
-{}'''.format('\n'.join((
-    '* [{sensor_name} ({sensor_version})]({sensor_name_lower}_{sensor_version})'.format(
-        sensor_name=sensor['sensor_name'], sensor_name_lower=sensor['sensor_name'].lower(), sensor_version=sensor['sensor_version']) for sensor in sorted(mappings, key=itemgetter('sensor_name', 'sensor_version'))
-    ))
-             )
-index_file = open('../docs/sensors/index.md', 'w')
-index_file.write(index_content)
-index_file.flush()
-index_file.close()
+{}'''.format(
+        '\n'.join(
+            (
+                '* [{sensor_name} ({sensor_version})]({sensor_name_lower}_{sensor_version})'.format(
+                    sensor_name=sensor['sensor_name'],
+                    sensor_name_lower=sensor['sensor_name'].lower(),
+                    sensor_version=sensor['sensor_version']
+                    ) for sensor in sorted(
+                        mappings,
+                        key=lambda sensor: (
+                            sensor['sensor_name'].lower(),
+                            sensor['sensor_version']
+                        )
+                    )
+                )
+            )
+        )
+with open('../docs/sensors/index.md', 'w') as index_file:
+  index_file.write(index_content)
