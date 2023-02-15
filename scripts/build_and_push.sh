@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script prepares a virtual environment, installs the requisite python dependencies, runs the generate_analytics python script (which updates the docs/jekyll site with the new analytics data), pushes that regenerated static content to the repo specified in $GIT_REMOTE, and cleans up the virtual environment.
-# How to run (assumes working directory is /scripts): `sh ./build_and_push.sh`.
+# How to run (assumes working directory is /scripts): `bash ./build_and_push.sh`.
 #   Note: Assumes the following:
 #     The working directory is /scripts.
 #     The user has appropriate credentials to push to their git remote.
