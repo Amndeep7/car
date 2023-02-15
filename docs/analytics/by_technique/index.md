@@ -31,7 +31,7 @@ permalink: /analytics/by_technique
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1007/">T1007: System Service Discovery</a></td>
             <td>(N/A - technique only)</td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1010/">T1010: Application Window Discovery</a></td>
@@ -46,7 +46,7 @@ permalink: /analytics/by_technique
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1016/">T1016: System Network Configuration Discovery</a></td>
             <td>(N/A - technique only)</td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1018/">T1018: Remote System Discovery</a></td>
@@ -60,7 +60,7 @@ permalink: /analytics/by_technique
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1021/001/">T1021.001: Remote Desktop Protocol</a></td>
-            <td><ul><li><a href="CAR-2013-07-002">CAR-2013-07-002: RDP Connection Detection</a></li><li><a href="CAR-2013-10-001">CAR-2013-10-001: User Login Activity Monitoring</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-07-002">CAR-2013-07-002: RDP Connection Detection</a></li><li><a href="CAR-2013-10-001">CAR-2013-10-001: User Login Activity Monitoring</a></li><li><a href="CAR-2016-04-005">CAR-2016-04-005: Remote Desktop Logon</a></li></ul></td>
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1021/002/">T1021.002: SMB/Windows Admin Shares</a></td>
@@ -82,7 +82,7 @@ permalink: /analytics/by_technique
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1033/">T1033: System Owner/User Discovery</a></td>
             <td>(N/A - technique only)</td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="3"><a href="https://attack.mitre.org/techniques/T1036/">T1036: Masquerading</a></td>
@@ -120,7 +120,7 @@ permalink: /analytics/by_technique
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1047/">T1047: Windows Management Instrumentation</a></td>
             <td>(N/A - technique only)</td>
-            <td><ul><li><a href="CAR-2014-11-007">CAR-2014-11-007: Remote Windows Management Instrumentation (WMI) over RPC</a></li><li><a href="CAR-2014-12-001">CAR-2014-12-001: Remotely Launched Executables via WMI</a></li></ul></td>
+            <td><ul><li><a href="CAR-2014-11-007">CAR-2014-11-007: Remote Windows Management Instrumentation (WMI) over RPC</a></li><li><a href="CAR-2014-12-001">CAR-2014-12-001: Remotely Launched Executables via WMI</a></li><li><a href="CAR-2016-03-002">CAR-2016-03-002: Create Remote Process via WMIC</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1049/">T1049: System Network Connections Discovery</a></td>
@@ -152,7 +152,7 @@ permalink: /analytics/by_technique
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1057/">T1057: Process Discovery</a></td>
             <td>(N/A - technique only)</td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="4"><a href="https://attack.mitre.org/techniques/T1059/">T1059: Command and Scripting Interpreter</a></td>
@@ -181,11 +181,11 @@ permalink: /analytics/by_technique
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1069/001/">T1069.001: Local Groups</a></td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2020-11-006">CAR-2020-11-006: Local Permission Group Discovery</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li><li><a href="CAR-2020-11-006">CAR-2020-11-006: Local Permission Group Discovery</a></li></ul></td>
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1069/002/">T1069.002: Domain Groups</a></td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2020-11-006">CAR-2020-11-006: Local Permission Group Discovery</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li><li><a href="CAR-2020-11-006">CAR-2020-11-006: Local Permission Group Discovery</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="4"><a href="https://attack.mitre.org/techniques/T1070/">T1070: Indicator Removal</a></td>
@@ -196,7 +196,7 @@ permalink: /analytics/by_technique
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1070/001/">T1070.001: Clear Windows Event Logs</a></td>
-            <td><ul><li><a href="CAR-2021-01-003">CAR-2021-01-003: Clearing Windows Logs with Wevtutil</a></li></ul></td>
+            <td><ul><li><a href="CAR-2016-04-002">CAR-2016-04-002: User Activity from Clearing Event Logs</a></li><li><a href="CAR-2021-01-003">CAR-2021-01-003: Clearing Windows Logs with Wevtutil</a></li></ul></td>
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1070/005/">T1070.005: Network Share Connection Removal</a></td>
@@ -216,18 +216,18 @@ permalink: /analytics/by_technique
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1082/">T1082: System Information Discovery</a></td>
             <td>(N/A - technique only)</td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="3"><a href="https://attack.mitre.org/techniques/T1087/">T1087: Account Discovery</a></td>
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1087/001/">T1087.001: Local Account</a></td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1087/002/">T1087.002: Domain Account</a></td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-03-001">CAR-2016-03-001: Host Discovery Commands</a></li></ul></td>
         </tr>
        <tr>
             <td rowspan="1"><a href="https://attack.mitre.org/techniques/T1098/">T1098: Account Manipulation</a></td>
@@ -376,6 +376,11 @@ permalink: /analytics/by_technique
             <td><ul><li><a href="CAR-2013-10-002">CAR-2013-10-002: DLL Injection via Load Library</a></li><li><a href="CAR-2019-04-001">CAR-2019-04-001: UAC Bypass</a></li><li><a href="CAR-2021-01-008">CAR-2021-01-008: Disable UAC</a></li></ul></td>
         </tr>
        <tr>
+            <td ><a href="https://attack.mitre.org/techniques/T1550/">T1550: Use Alternate Authentication Material</a></td>
+            <td><a href="https://attack.mitre.org/techniques/T1550/002/">T1550.002: Pass the Hash</a></td>
+            <td><ul><li><a href="CAR-2016-04-004">CAR-2016-04-004: Successful Local Account Login</a></li></ul></td>
+        </tr>
+       <tr>
             <td rowspan="3"><a href="https://attack.mitre.org/techniques/T1552/">T1552: Unsecured Credentials</a></td>
         </tr>
        <tr>
@@ -406,7 +411,7 @@ permalink: /analytics/by_technique
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1562/001/">T1562.001: Disable or Modify Tools</a></td>
-            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2021-01-007">CAR-2021-01-007: Detecting Tampering of Windows Defender Command Prompt</a></li></ul></td>
+            <td><ul><li><a href="CAR-2013-04-002">CAR-2013-04-002: Quick execution of a series of suspicious commands</a></li><li><a href="CAR-2016-04-003">CAR-2016-04-003: User Activity from Stopping Windows Defensive Services</a></li><li><a href="CAR-2021-01-007">CAR-2021-01-007: Detecting Tampering of Windows Defender Command Prompt</a></li></ul></td>
         </tr>
        <tr>
             <td><a href="https://attack.mitre.org/techniques/T1562/006/">T1562.006: Indicator Blocking</a></td>

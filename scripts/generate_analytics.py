@@ -155,9 +155,6 @@ for analytic in sorted(analytics, key = lambda k: k['id']):
     index_content += table_row
 index_content += table_footer
 
-print('table tech', table_techniques)
-print('t1550?', 'T1550' in table_techniques)
-
 # Build the second (subtechnique-based) table
 for tid in sorted(table_techniques):
     # Find all analytics with this technique

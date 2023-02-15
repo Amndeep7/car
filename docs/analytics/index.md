@@ -332,6 +332,54 @@ permalink: /analytics/
                 <td>Windows, Linux, macOS</td>
             </tr>
             <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/CAR-2016-03-001/">CAR-2016-03-001</a></td>
+                <td>Host Discovery Commands</td>
+                <td style="white-space:nowrap;">March 24 2016</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1087/">Account Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1069/">Permission Groups Discovery</a></li></ul></td>
+                <td>Eql, Logpoint, Pseudocode, Splunk</td>
+                <td>Windows, Linux, macOS</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/CAR-2016-03-002/">CAR-2016-03-002</a></td>
+                <td>Create Remote Process via WMIC</td>
+                <td style="white-space:nowrap;">March 28 2016</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1047/">Windows Management Instrumentation</a></li></ul></td>
+                <td>Eql, Logpoint, Pseudocode, Splunk</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/CAR-2016-04-002/">CAR-2016-04-002</a></td>
+                <td>User Activity from Clearing Event Logs</td>
+                <td style="white-space:nowrap;">April 14 2016</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1070/">Indicator Removal</a></li></ul></td>
+                <td>Logpoint, Pseudocode, Sigma, Splunk</td>
+                <td>Windows, Linux, macOS</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/CAR-2016-04-003/">CAR-2016-04-003</a></td>
+                <td>User Activity from Stopping Windows Defensive Services</td>
+                <td style="white-space:nowrap;">April 15 2016</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1562/">Impair Defenses</a></li></ul></td>
+                <td>Logpoint, Pseudocode</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/CAR-2016-04-004/">CAR-2016-04-004</a></td>
+                <td>Successful Local Account Login</td>
+                <td style="white-space:nowrap;">April 18 2016</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1550/">Use Alternate Authentication Material</a></li></ul></td>
+                <td>Pseudocode</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/CAR-2016-04-005/">CAR-2016-04-005</a></td>
+                <td>Remote Desktop Logon</td>
+                <td style="white-space:nowrap;">April 19 2016</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1021/">Remote Services</a></li></ul></td>
+                <td>Logpoint, Pseudocode, Sigma</td>
+                <td>Windows</td>
+            </tr>
+            <tr>
                 <td style="white-space:nowrap;"><a href="/analytics/CAR-2019-04-001/">CAR-2019-04-001</a></td>
                 <td>UAC Bypass</td>
                 <td style="white-space:nowrap;">April 19 2019</td>
