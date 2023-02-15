@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script prepares a virtual environment, installs the requisite python dependencies, runs the generate_analytics python script (which updates the docs/jekyll site with the new analytics data), pushes that regenerated static content to the repo specified in $GIT_REMOTE, and cleans up the virtual environment.
 # How to run (assumes working directory is /scripts): `sh ./build_and_push.sh`.
@@ -52,6 +52,12 @@ fi
 
 echo "Running \`generate_analytics.py\` and regenerating /docs/analytics..."
 python ./generate_analytics.py
+
+# echo "Running \`generate_attack_nav_layer.py\` and regenerating /docs/analytics..."
+# python ./generate_attack_nav_layer.py
+# 
+# echo "Running \`generate_sensors.py\` and regenerating /docs/analytics..."
+# python ./generate_sensors.py
 
 echo "Deactivating virtual environment..."
 deactivate
