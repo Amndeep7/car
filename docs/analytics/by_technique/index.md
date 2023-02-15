@@ -372,7 +372,6 @@ permalink: /analytics/by_technique
             <td><ul><li><a href="CAR-2021-02-002">CAR-2021-02-002: Get System Elevation</a></li></ul></td>
         </tr>
        <tr>
-            <td ><a href="https://attack.mitre.org/techniques/T1548/">T1548: Abuse Elevation Control Mechanism</a></td>
             <td><a href="https://attack.mitre.org/techniques/T1548/002/">T1548.002: Bypass User Account Control</a></td>
             <td><ul><li><a href="CAR-2013-10-002">CAR-2013-10-002: DLL Injection via Load Library</a></li><li><a href="CAR-2019-04-001">CAR-2019-04-001: UAC Bypass</a></li><li><a href="CAR-2021-01-008">CAR-2021-01-008: Disable UAC</a></li></ul></td>
         </tr>
