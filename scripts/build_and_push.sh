@@ -38,6 +38,7 @@ source ./venv/bin/activate
 echo "Installing dependencies in virtual environment..."
 python -m pip install -r ./requirements.txt
 
+# generate_attack_nav_layer.py currently only generates a single json file and replaces it in full every time it is run so no cleanup is required for it
 _rm_does_not_exist="false"
 if ! [ -x "$(command -v rm)" ] ; then
   _rm_does_not_exist="true"
@@ -45,19 +46,24 @@ if ! [ -x "$(command -v rm)" ] ; then
   echo "Cannot clean up /docs/analytics..."
   echo "There is a potential for unwanted analyses to still show up on the site even after having deleted them from /analytics..."
   echo "You might want to do a manual review of /docs/analytics to ensure only the desired analyses are there..."
+  echo "Cannot clean up /docs/sensors..."
+  echo "There is a potential for unwanted sensors to still show up on the site even after having deleted them from /sensors..."
+  echo "You might want to do a manual review of /docs/sensors to ensure only the desired analyses are there..."
 else
   echo "Cleaning up /docs/analytics..."
-  rm -r ../docs/analytics
+  rm -rfv ../docs/analytics
+  echo "Cleaning up /docs/sensors..."
+  rm -rfv ../docs/sensors
 fi
 
 echo "Running \`generate_analytics.py\` and regenerating /docs/analytics..."
 python ./generate_analytics.py
 
-# echo "Running \`generate_attack_nav_layer.py\` and regenerating /docs/analytics..."
-# python ./generate_attack_nav_layer.py
-# 
-# echo "Running \`generate_sensors.py\` and regenerating /docs/analytics..."
-# python ./generate_sensors.py
+echo "Running \`generate_attack_nav_layer.py\` and regenerating /docs/car_attack..."
+python ./generate_attack_nav_layer.py
+
+echo "Running \`generate_sensors.py\` and regenerating /docs/sensors..."
+python ./generate_sensors.py
 
 echo "Deactivating virtual environment..."
 deactivate
@@ -96,7 +102,6 @@ echo "Git executable: $(command -v git), Git version: $(git --version)"
 echo "Git remote: $_git_remote, Git branch: $_git_branch"
 echo "Git user name: $_git_user_name, Git user email: $_git_user_email"
 echo "Git commit message: $_git_commit_message"
-# TODO: be able to determine calling location and adjust accordingly, run other generate scripts
 
 echo "Checking if git branch exists locally..."
 if git show-ref --quiet --heads "$_git_branch"; then
