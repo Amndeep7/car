@@ -157,6 +157,8 @@ index_content += table_footer
 
 # Build the second (subtechnique-based) table
 for tid in sorted(table_techniques):
+    if tid == 'T1550':
+        pass
     # Find all analytics with this technique
     none_bucket = []
     sub_bucket = {}
