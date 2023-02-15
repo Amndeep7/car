@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # This script prepares a virtual environment, installs the requisite python dependencies, runs the generate_analytics python script (which updates the docs/jekyll site with the new analytics data), pushes that regenerated static content to the repo specified in $GIT_REMOTE, and cleans up the virtual environment.
-# How to run (assumes working directory is /scripts): `bash ./build_and_push.sh`.
+# How to run (assumes working directory is /scripts): `sh ./build_and_push.sh`.
 #   Note: Assumes the following:
 #     The working directory is /scripts.
 #     The user has appropriate credentials to push to their git remote.
@@ -14,7 +14,7 @@
 #     GIT_BRANCH=master # name of the branch (can list all branches using `git branch -av` - this branch should be listed at least twice as it needs to be available locally and remotely)
 #     GIT_USER_NAME="Build and Push Automation Script" # name to use for the committer/author; order of operations will be user provided variable, already configured committer identity, the default specified here
 #     GIT_USER_EMAIL="<>" # email to use for the committer/author; order of operations will be user provided variable, already configured committer identity, the default specified here (no email associated)
-#     GIT_COMMIT_MESSAGE="Automated commit to rebuild the static site" # message to use on commit - recommended that this is provided when COMMIT_ENTIRE_REPO is 'true'
+#     GIT_COMMIT_MESSAGE="Automated commit to rebuild the static site" # message to use on commit - recommended that this is provided when COMMIT_ENTIRE_REPO is "true"
 #     COMMIT_ENTIRE_REPO=true # by default, commit all changes in the repo, otherwise only commit changes in /docs
 
 set -o errexit # exit on non-zero exit code
