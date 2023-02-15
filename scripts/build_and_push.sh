@@ -72,7 +72,7 @@ if [ "$_rm_does_not_exist" = "true" ]; then
   echo "Cannot clean up virtual environment..."
 else
   echo "Cleaning up virtual environment..."
-  # rm -r ./venv
+  rm -r ./venv
 fi
 
 if ! [ -x "$(command -v git)" ]; then
