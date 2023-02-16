@@ -835,5 +835,13 @@ permalink: /analytics/
                 <td>Logpoint, Pseudocode, Splunk</td>
                 <td>Windows</td>
             </tr>
+            <tr>
+                <td style="white-space:nowrap;"><a href="/analytics/MY-TEST/">MY-TEST</a></td>
+                <td>New DATA 22222</td>
+                <td style="white-space:nowrap;">January 25 2022</td>
+                <td><ul><li><a href="https://attack.mitre.org/techniques/T1543/">Create or Modify System Process</a></li><li><a href="https://attack.mitre.org/techniques/T1053/">Scheduled Task/Job</a></li></ul></td>
+                <td></td>
+                <td>Windows</td>
+            </tr>
       </tbody>
 </table>
