@@ -1,6 +1,7 @@
 name: Regenerate /docs using the generate_*.py scripts
 
 on:
+  pull_request_target:
   push:
     branches: [master]
 
@@ -12,6 +13,9 @@ jobs:
     steps:
       - name: Pull down repo
         uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
       - name: Clean /docs/analytics
         shell: bash
         run: rm -rfv ./docs/analytics
