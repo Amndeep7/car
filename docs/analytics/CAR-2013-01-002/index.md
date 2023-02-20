@@ -5,7 +5,7 @@ submission_date: 2022/01/25
 information_domain: Analytic, Host
 subtypes: Registry
 analytic_type: Situational Awareness, TTP
-contributors: TESTING
+contributors: TESTINGfdsa
 applicable_platforms: Windows
 ---
 <br><br>
