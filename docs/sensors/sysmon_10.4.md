@@ -38,6 +38,13 @@ Sysmon is a freely available program from Microsoft that is provided as part of 
 | `load` |  |✓| |✓|✓| | |✓|✓| |✓|
 | `unload` |  | | | | | | | | | | |
 
+### [module](../data_model/module)
+
+| | `base_address` | `fqdn` | `hostname` | `image_path` | `md5_hash` | `module_name` | `module_path` | `pid` | `sha1_hash` | `sha256_hash` | `signature_valid` | `signer` | `tid` |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `load` |  |✓| |✓|✓| |✓|✓|✓|✓| |✓| |
+| `unload` |  | | | | | | | | | | | | |
+
 ### [thread](../data_model/thread)
 
 | | `hostname` | `src_pid` | `src_tid` | `stack_base` | `stack_limit` | `start_address` | `start_function` | `start_module` | `start_module_name` | `tgt_pid` | `tgt_tid` | `uid` | `user` | `user_stack_base` | `user_stack_limit` |
